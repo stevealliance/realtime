@@ -5,7 +5,7 @@ FROM elixir:1.9.4 AS app_builder
 ENV MIX_ENV=prod \
     TEST=1 \
     LANG=C.UTF-8 \
-    DB_HOST=${DB_HOST} \
+    DB_HOST=$DB_HOST \
     DB_NAME=${DB_NAME} \
     DB_USER=postgres \
     DB_PASSWORD=postgres \
